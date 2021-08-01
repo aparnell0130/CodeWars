@@ -1,7 +1,7 @@
 const red = document.querySelector('.red')
 const yellow = document.querySelector('.yellow')
 const green = document.querySelector('.green')
-const colors = ['red', 'yellow', 'green']
+const colors = ['yellow', 'red', 'green']
 let i = 0
 function updateLight(current) {
     let newLight
