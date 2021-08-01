@@ -38,7 +38,7 @@ function change() {
         i = 0;
     }
 }
-setInterval(change, 1000);
+setInterval(change, 3000);
 
 
 // console.log(updateLight("green"))
