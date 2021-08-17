@@ -1,3 +1,8 @@
+const input = document.getElementById('inputBox')
+const button = document.querySelector('#case')
+const alternatedCase = document.querySelector('.alternatedCases')
+console.log(input);
+
 String.prototype.toAlternateCase = function () {
     let newString = '';
     const letters = Object.values(this)
@@ -11,4 +16,11 @@ String.prototype.toAlternateCase = function () {
     return newString
 }
 
+const changeText = (e) => {
+    e.preventDefault()
+    const inputValue = input.value
+    alternatedCase.textContent = inputValue.toAlternateCase()
+}
+
+button.addEventListener('click', changeText)
 console.log('HelLo WoRLd'.toAlternateCase())
