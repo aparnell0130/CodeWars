@@ -12,6 +12,6 @@ const digitalRoot = (n) => {
 
 console.log(digitalRoot(16));
 console.log(digitalRoot(456));
-console.log(digitalRoot(942));
-console.log(digitalRoot(132189));
+console.log(digitalRoot(9421));
+console.log(digitalRoot(13218));
 console.log(digitalRoot(493193));
