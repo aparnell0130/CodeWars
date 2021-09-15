@@ -16,7 +16,21 @@ const spinWords = (string) => {
     if (tmpStr) {
         arr[arr.length] = tmpStr
     }
-    return arr
+
+    for (let j = 0; j < arr.length; j++) {
+        const word = arr[j]
+        let str = ''
+        if (arr[j].length < 5) {
+            newStr += arr[j]
+        } else {
+            for (let k = word.length - 1; k >= 0; k--) {
+                str += word[k]
+            }
+        }
+        newStr += str + ' '
+    }
+
+    return newStr
 }
 
 console.log(spinWords("Welcome"))
