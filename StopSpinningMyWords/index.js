@@ -30,7 +30,10 @@ const spinWords = (string) => {
         newStr += str + ' '
     }
 
-    return newStr
+    for (let s = 0; s < newStr.length - 1; s++) {
+        result += newStr[s]
+    }
+    return result
 }
 
 console.log(spinWords("Welcome"))
