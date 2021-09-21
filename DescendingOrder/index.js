@@ -7,6 +7,9 @@ const descendingOrderNM = (n) => {
     let arr = []
     let newN = ''
 
+    for (let i = 0; i < strN.length; i++) {
+        arr[arr.length] = strN[i]
+    }
 }
 
 
