@@ -2,6 +2,13 @@ const descendingOrder = (n) => {
     return +(n.toString().split('').sort((a, b) => b - a).join(''))
 }
 
+const descendingOrderNM = (n) => {
+    const strN = n + ''
+    let arr = []
+    let newN = ''
+
+}
+
 
 console.log(descendingOrder(0))
 console.log(descendingOrder(1))
