@@ -4,7 +4,7 @@ const decodePass = (passArr, bin) => {
     let binArr = []
     let arr = []
 
-    // for loop to make bin into and array equivalent to bin.split(' ')
+    // for loop to make bin into an array equivalent to bin.split(' ')
     for (let i = 0; i < bin.length; i++) {
         if (bin[i] !== ' ') {
             // add bin[i] to binString
@@ -21,5 +21,23 @@ const decodePass = (passArr, bin) => {
         binArr[binArr.length] = binString
         binString = ''
     }
+    // for loop to change binary code to CharCode and push into array
+    // loop through binArr
+    for (let i = 0; i < binArr.length; i++) {
+        let binary = binArr[i]
+        let power = binary.length - 1
+        let accumulator = 0
 
+        // loop over binary code
+        for (let j = 0; j < binary.length; j++) {
+            // convert binary code to CharCode
+            accumulator += (+binary[j]) * (2 ** power)
+            // subtract 1 from power
+            power--
+        }
+        // push accumulator into arr
+        arr[arr.length] = accumulator
+        // reset accumulator to 0
+        accumulator = 0
+    }
 }
