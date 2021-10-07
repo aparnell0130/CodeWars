@@ -39,7 +39,7 @@ const decodePass = (passArr, bin) => {
         // reset accumulator to 0
         accumulator = 0
     }
-    // for loop to check if binString matches any values in passArr
+    // for loop to check if binString matches any values in passArr equivalent to passArr.includes(binString)
     for (let i = 0; i < passArr.length; i++) {
         if (passArr[i] === binString) {
             return binString
